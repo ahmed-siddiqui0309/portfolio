@@ -1,0 +1,411 @@
+/* Fade-in animation for all text elements */
+.fade-in {
+  animation: fadeInAnimation 2.5s ease forwards;
+  opacity: 0;
+}
+
+@keyframes fadeInAnimation {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Common styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: dimgray;
+  color: white;
+}
+
+header {
+  background-color: rgb(0, 0, 0);
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+}
+
+header nav {
+  display: flex;
+  justify-content: flex-start; /* Align items to the left */
+  padding: 20px 0;
+}
+
+header nav a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  padding: 0 20px;
+  font-size: 18px;
+}
+
+section {
+  padding-top: 60px; /* Adjust according to header height */
+  position: relative;
+}
+
+.divider {
+  border-top: 2px solid rgb(255, 255, 255); /* thicker line */
+  width: 100%;
+  position: absolute;
+  top: 60px; /* Adjust according to header height */
+  z-index: -1; /* Ensure it's below the header */
+}
+
+/* Home section styles */
+#home .home-content {
+  position: relative;
+  top: 150px; /* Adjust the distance from the navbar */
+  text-align: left; /* Align content to the left */
+  margin-left: 100px;
+  width: 100%;
+}
+
+#home .home-content h1 {
+  color: black;
+  margin: 0;
+  font-size: 4em; /* Larger font size for h1 */
+}
+
+#home .home-content h5 {
+  color: rgba(255, 255, 255, 0.8); /* Transparent white */
+  margin: 0;
+  font-size: 1.5em; /* Font size for h5 */
+}
+
+/* About section styles */
+#about {
+  position: relative;
+  top: 500px; /* Adjust the distance from the previous section */
+}
+
+#about .horizontal-line {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: black;
+}
+
+#about .about-heading {
+  position: absolute;
+  top: 50px; /* Adjust the distance from the top */
+  left: 100px; /* Adjust the distance from the left */
+  color: rgba(255, 255, 0, 0.8); /* Transparent yellow */
+  font-size: 1.5em; /* Font size for h5 */
+}
+
+#about .about-text {
+  position: absolute;
+  top: 70px; /* Adjust the distance from the top */
+  right: 100px; /* Adjust the distance from the left */
+  width: 40%;
+  color: rgba(7, 7, 7, 0.8); /* Transparent yellow */
+  font-size: 1.7em; /* Font size for h5 */
+}
+ 
+#about .vl {
+  border-left: 2px solid rgb(255, 255, 255);
+  height: 380px;
+  margin-left: 770px;
+  margin-top: 60px;
+  position: absolute;
+}
+
+#services .divider {
+  border-top: 2px solid black;
+  width: 100%;
+}
+
+#services h2 {
+  color: white;
+  font-size: 3.5em; /* Adjust as needed */
+  position: absolute;
+  top: 50px; /* Adjust as needed */
+  left: 100px; /* Adjust as needed */
+}
+
+#services .vertical-line {
+  border-left: 2px solid black;
+  height: 668px; /* Adjust as needed */
+  position: absolute;
+  left: 770px; /* Adjust as needed */
+}
+
+#services {
+  position: relative;
+  top: 1000px; /* Adjust the distance from the previous section */
+}
+
+.services-text {
+  font-size: 2em;
+  margin-top: 140px;
+  margin-left: 20px;
+  color: black;
+}
+#services .divider2 {
+  border-top: 2px solid black;
+  width: 770px;
+}
+
+#services .achievment {
+  color: white;
+  font-size: 3.5em; /* Adjust as needed */
+  position: absolute;
+  top: 350px; /* Adjust as needed */
+  left: 100px; /* Adjust as needed */
+}
+
+.services-text2 {
+  font-size: 1.5em;
+  margin-top: 130px;
+  margin-left: 20px;
+  width: 700px;
+  color: black;
+}
+
+.text-item {
+  margin-bottom: 15px;
+}
+
+#services .other-text {
+  font-size: 3.2em;
+  margin-left: 740px;
+  margin-top: 50px;
+  color: white;
+}
+
+.services-text3 {
+  margin-top: 130px;
+  color: black;
+  margin-left: 770px;
+  font-size: 1.5em;
+  position: absolute;
+}
+
+.text-item2 {
+  margin-bottom: 25px;
+}
+
+.Yellow-text {
+  color: rgb(255, 255, 255);
+  font-size: 1em;
+}
+
+#services .divider3 {
+  border-top: 2px solid black;
+  width: 100%;
+}
+
+#projects {
+  top: 950px;
+  position: relative;
+}
+
+#projects h2 {
+  margin-left: 100px;
+  font-size: 3.5em;
+  color: white;
+  margin-top: 50px;
+}
+
+.project-image {
+  margin-left: 70px;
+  margin-top: 50px;
+  height: 300px;
+  width: 450;
+  display: list-item;
+}
+
+#contacts .divider4 {
+  border-top: 2px solid black;
+  width: 100%;
+}
+
+#contacts {
+  top: 925px;
+}
+
+#contacts h1 {
+  margin-top: 50px;
+  margin-left: 100px;
+  font-size: 4em;
+  margin-bottom: 0px;
+}
+
+#contacts h3 {
+  margin-top: 0px;
+  margin-left: 150px;
+  font-size: 3em;
+  color: black;
+}
+
+#contacts .email-header {
+  text-decoration: underline;
+  text-decoration-color: black;
+  margin-top: 50px;
+  margin-left: 125px;
+  color: white;
+  margin-bottom: 0px;
+  font-size: 2.5em;
+}
+
+#contacts .email {
+  margin-top: 0px;
+  margin-left: 150px;
+  color: black;
+  font-size: 2.5em;
+  margin-bottom: 0px;
+}
+
+#contacts .linkedin-header {
+  text-decoration: underline;
+  text-decoration-color: black;
+  margin-top: 10px;
+  margin-left: 125px;
+  color: white;
+  margin-bottom: 0px;
+  font-size: 2.5em;
+}
+
+#contacts .divider5 {
+  margin-top: 200px;
+  border-top: 2px solid black;
+  width: 100%;
+  margin-bottom: 100px;
+}
+
+#contacts .divider6 {
+  margin-top: 200px;
+  border-top: 2px solid black;
+  width: 100%;
+  margin-bottom: 100px;
+}
+
+#contacts img {
+  position: absolute;
+  right: 150px;
+  top: 170px;
+  height: 300px;
+  width: 500px;
+  border: 4px solid black;
+}
+
+img {
+  border: 4px solid black;
+}
+
+/* Mobile Styles */
+@media only screen and (max-width: 768px) {
+  header nav {
+    justify-content: center; /* Align items to the center */
+  }
+
+  header nav a {
+    padding: 0 10px; /* Reduce padding */
+    font-size: 16px; /* Decrease font size */
+  }
+
+  /* Adjust padding for sections */
+  section {
+    padding-top: 50px;
+  }
+
+  /* Adjust text alignment and margins for home section */
+  #home .home-content {
+    text-align: center;
+    margin-left: 0;
+  }
+
+  /* Adjust top position for about section */
+  #about {
+    top: 400px;
+  }
+
+  /* Adjust top position for services section */
+  #services {
+    top: 800px;
+  }
+
+  /* Adjust top position for projects section */
+  #projects {
+    top: 750px;
+  }
+
+  /* Adjust top position for contacts section */
+  #contacts {
+    top: 725px;
+  }
+
+  /* Adjust margins and font sizes for contact section */
+  #contacts h1 {
+    margin-left: 50px;
+    font-size: 3em;
+  }
+
+  #contacts h3 {
+    margin-left: 100px;
+    font-size: 2.5em;
+  }
+
+  #contacts .email-header,
+  #contacts .linkedin-header {
+    margin-left: 75px;
+    font-size: 2em;
+  }
+
+  #contacts .email,
+  #contacts .linkedin {
+    margin-left: 100px;
+    font-size: 1.5em;
+  }
+
+  #contacts img {
+    right: 50px;
+    top: 150px;
+    height: 250px;
+    width: 400px;
+  }
+
+  /* Adjust font sizes for other sections */
+  h1 {
+    font-size: 3em;
+  }
+
+  h2 {
+    font-size: 2.5em;
+  }
+
+  h3 {
+    font-size: 2em;
+  }
+
+  h5 {
+    font-size: 1.2em;
+  }
+
+  .services-text {
+    font-size: 1.5em;
+  }
+
+  .services-text2 {
+    font-size: 1.2em;
+  }
+
+  .services-text3 {
+    font-size: 1.2em;
+    margin-left: 50px;
+  }
+
+  .Yellow-text {
+    font-size: 0.8em;
+  }
+
+  .text-item,
+  .text-item2 {
+    margin-bottom: 10px;
+  }
+}
